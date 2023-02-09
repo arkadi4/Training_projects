@@ -1,0 +1,169 @@
+.pets {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: $color-light;
+}
+
+.pets-wrapper {
+    padding: 80px 40px 100px;
+    @media (max-width:$tablet) {
+        padding: 60px 30px 70px;
+    }
+    @media (max-width:$mobile) {
+        padding: 42px 10px 42px;
+    }
+}
+
+.pets__title {
+    max-width: 400px;
+    font-family: Georgia;
+    @include font ($h3-size, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    text-align: center;
+    margin: 0 auto 45px;
+    white-space: pre-wrap;
+    @media (max-width:$tablet) {
+        margin: 50px auto 0;
+    }
+    @media (max-width:$mobile) {
+        margin: 30px auto 10px;
+        @include font ($h3-mobile, 130%);
+    }
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    gap: 30px 40px;
+    @media (max-width:$tablet) {
+        grid-template-columns: repeat(2, 270px);
+        justify-content: center;
+        padding: 30px 0;
+    }
+    @media (max-width:$mobile) {
+        grid-template-columns: repeat(1, 270px);
+        justify-content: center;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 270px;
+    padding-bottom: 30px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    &:hover {
+        background: $color-light;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    &:hover .card__button {
+        background: $color-primary-light;
+        transition: all 0.5s;
+    }
+    @media (max-width:$tablet) {
+        width: 270px;
+    }
+    @media (max-width:$mobile) {
+
+    }
+}
+
+.card_active {
+    background: $color-light;
+    cursor: pointer;
+}
+
+
+.card__title {
+    font-family: Georgia;
+    @include font($h4-size, 23px);
+    text-align: center;
+    color: $color-dark-1;
+    letter-spacing: 0.06em;
+    margin: 0;
+}
+
+.card__button {
+    width: 187px;
+    height: 52px;
+    background-color: $color-light;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    font-family: Georgia;
+    @include font (17px, 130%);
+    color: $color-dark-3;
+    letter-spacing: 0.06em;
+}
+
+.card__button_active {
+    background: $color-primary-light;
+    cursor: pointer;
+}
+
+.pets-navigation {
+    max-width: 340px;
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__button {
+    width: 52px;
+    height: 52px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background-color: white;
+    font-family: Georgia;
+    @include font ($h4-size, 115%);
+    color: $color-dark-3;
+    letter-spacing: 0.06em;
+    // &:hover{
+    //     background: $color-primary-light;
+    //     cursor: pointer;
+    // }
+
+}
+
+.card__subtitle, .card__text, .card__age, .card__Inoculations, .card__Diseases, .card__Parasites {
+    display: none;
+    // &_active {
+    //     display: block;
+    // }
+}
+
+.button-dark {
+    border: 2px solid $color-dark;
+}
+
+.button-center {
+    border: none;
+    background: $color-primary;
+}
+
+.button-color {
+    border: 2px solid $color-primary;
+    &:hover {
+        background: $color-primary;
+        cursor: pointer;
+    }
+}
+
+.Scarlett, .Freddie {
+    @media (max-width:$tablet) {
+        display: none;
+    }
+}
+
+.Sophia, .Timmy, .Charly {
+    @media (max-width:$mobile) {
+        display: none;
+    }
+}

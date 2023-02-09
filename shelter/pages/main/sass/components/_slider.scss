@@ -1,0 +1,175 @@
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 53px;
+    transition: all 0.5s;
+    @media (max-width:$tablet) {
+        gap: 12px;
+    }
+    @media (max-width:$mobile) {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+
+.slider__card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 90px;
+    @media (max-width:$tablet) {
+        gap: 40px;
+    }
+    @media (max-width:$mobile) {
+        //flex-direction: column;
+        //flex-basis: 50%;
+        //margin: 0 auto;
+    }
+}
+
+.container-for-arrows-mobile {
+    display: none;
+    @media (max-width:$mobile) {
+        display: flex;
+        gap: 80px;
+        //margin: 0 auto;
+    }
+}
+
+.slider__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 270px;
+    padding-bottom: 30px;
+    background: #FAFAFA;
+    border-radius: 9px;
+    transition: all 0.5s;
+    &:hover {
+        background: $color-light;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    &:hover .slider__card__button {
+        background: $color-primary-light;
+        transition: all 0.5s;
+    }
+    // @media (max-width:$mobile) {
+    //     width: 760px;
+    // }
+
+}
+
+.slider__card__3 {
+    @media (max-width:$tablet) {
+        display: none;
+    }
+}
+.slider__card__2 {
+    @media (max-width:$mobile) {
+        display: none;
+    }
+}
+
+.slider__card_active {
+    background: $color-light;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.slider__card__title {
+    font-family: Georgia;
+    @include font($h4-size, 23px);
+    text-align: center;
+    color: $color-dark-1;
+    letter-spacing: 0.06em;
+    margin: 0;
+    transition: all 0.5s;
+}
+
+@keyframes move-left {
+    from {
+        left: -990px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@media (max-width:1279px) {
+    @keyframes move-left {
+
+        from {
+            left: -580px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    @keyframes move-left {
+        from {
+            left: -270px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+}
+
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 1.5s;
+}
+
+@keyframes move-right {
+    from {
+        left: -990px;
+    }
+
+    to {
+        left: -1980px;
+    }
+}
+
+@media (max-width:1279px) {
+    @keyframes move-right {
+
+        from {
+            left: -580px;
+        }
+
+        to {
+            left: -1160px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+
+    @keyframes move-right {
+        from {
+            left: -270px;
+        }
+
+        to {
+            left: -540px;
+        }
+    }
+}
+
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 1.5s;
+}

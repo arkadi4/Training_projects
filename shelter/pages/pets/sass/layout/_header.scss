@@ -1,0 +1,23 @@
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: $color-light;
+    &_active {
+        position: static;
+    }
+}
+
+.header-wrapper {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$tablet) {
+        padding: 30px 30px 0;
+    }
+    @media (max-width:$mobile) {
+        padding: 30px 53px 0 10px;
+        align-items: center;
+    }
+}

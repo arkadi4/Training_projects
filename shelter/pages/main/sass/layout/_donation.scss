@@ -1,0 +1,141 @@
+.donation {
+    background: #F6F6F6;
+}
+
+.donation-wrapper {
+    padding: 80px 182px 100px 183px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$tablet) {
+        flex-direction: column-reverse;
+        padding: 80px 131px 100px 132px;
+        gap: 60px;
+    }
+    @media (max-width:$mobile) {
+        padding: 42px 10px;
+        gap: 42px;
+    }
+}
+
+
+.donation-img {
+    background: url(../../assets/images/donation-dog.jpg);
+    width: 505px;
+    height: 261px;
+    background-size: cover;
+    @media (max-width:$tablet) {
+        // width: calc(260vw*100/320);
+        // height: calc(135vh*100/320);
+
+        margin: 0 auto;
+    }
+    @media (max-width:$mobile) {
+        // width: calc(260vw*100/320);
+        // height: calc(135vh*100/320);
+        width: 260px;
+        height: 135px;
+        margin: 0 auto;
+    }
+}
+
+.donation-information {
+    max-width: 380px;
+    @media (max-width:$tablet) {
+        max-width: 767px;
+        //margin: 0px 63px 0px 62px;
+        margin: 0 auto;
+    }
+    @media (max-width:$mobile) {
+        margin: 0px auto;
+    }
+}
+
+.donation__title {
+    max-width: 300px;
+    font-family: Georgia;
+    @include font ($h3-size, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    margin: 0 0 20px;
+    @media (max-width:$mobile) {
+        @include font ($h3-mobile, 130%);
+        text-align: center;
+        margin: 0 auto 20px;
+        max-width: 229px;
+    }
+}
+
+.donation_text {
+    max-width: 315px;
+    font-family: Georgia;
+    @include font ($p-size, 110%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    margin: 0 0 20px;
+    @media (max-width:$mobile) {
+        text-align: center;
+        margin: 0 auto 25px;
+        letter-spacing: normal;
+    }
+}
+
+.credit-card-container-div {
+    @media (max-width:$mobile) {
+        max-width: 281px;
+        margin: 0 auto;
+    }
+
+}
+
+.credit-card-container {
+    width: 349px;
+    height: 43px;
+    background: $color-primary;
+    border-radius: 9px;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    @media (max-width:$mobile) {
+        width: 281px;
+        padding: 0;
+        margin: 0 auto 20px ;
+    }
+}
+
+.credit-card__content {
+    width: 319px;
+    display: flex;
+    justify-content: space-between;
+    //margin: 0 15px;
+    @media (max-width:$mobile) {
+        width: 281px;
+        padding: 10px 15px;
+
+    }
+}
+
+.credit-card__number{
+    font-family: Georgia;
+    @include font ($h4-size, 115%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    cursor: pointer;
+    text-decoration: none;
+    @media (max-width:$mobile) {
+        @include font ($p-size, 110%);
+        margin: auto 0;
+    }
+}
+
+.legal-information {
+    max-width: 380px;
+    margin: 0;
+    font-family: Arial;
+    @include font (12px, 18px, $style: italic);
+    //letter-spacing: 0.05em;
+    color: $color-dark-m;
+    @media (max-width:$mobile) {
+        text-align: justify;
+        margin: 0 10px;
+    }
+}

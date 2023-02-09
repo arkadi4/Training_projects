@@ -1,0 +1,40 @@
+.pets {
+    max-width: 1280px;
+    background: #F6F6F6;
+}
+
+.pets-wrapper {
+    padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    @media (max-width:$tablet) {
+        padding: 80px 30px 100px;
+    }
+    @media (max-width:$mobile) {
+        gap: 42px;
+        padding: 47px 10px;
+    }
+}
+
+.pets__title {
+    max-width: 400px;
+    font-family: Georgia;
+    @include font ($h3-size, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    text-align: center;
+    margin: 0;
+    white-space: pre-wrap;
+    transition: all 0.5s;
+    @media (max-width:$mobile) {
+        max-width: 286px;
+        @include font ($h3-mobile, 130%);
+    }
+    @media (max-width:$mobile) {
+        max-width: 286px;
+        @include font ($h3-mobile, 130%);
+    }
+}
+

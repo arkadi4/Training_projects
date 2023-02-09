@@ -1,0 +1,42 @@
+.start-screen-background {
+    // background: url(./assets/jpg/start-screen-background.jpg)
+    //background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    //background: url(../../assets/images/start-screen-background1.jpg);
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+// .start-screen-background_active {
+//     padding-top: 30px;
+// }
+
+.background-dark {
+    display: none;
+    &_active {
+        width: 100%;
+        height: 1000%;
+        display: block;
+        position: absolute;
+        background: rgba(41, 41, 41, 0.6);
+        z-index: 2;
+        overflow-y: hidden;
+    }
+}
+
+.burger_active {
+    overflow-y: hidden;
+    
+}
+
+.background-dark_popup {
+    width: 100%;
+    height: 1000%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background: rgba(41, 41, 41, 0.6);
+    z-index: 2;
+    overflow-y: hidden;
+    &_active{
+        cursor: pointer;
+    }
+}

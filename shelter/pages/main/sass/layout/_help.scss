@@ -1,0 +1,116 @@
+.help-wrapper {
+    padding: 80px 40px 100px;
+    @media (max-width:$tablet) {
+        padding: 80px 69px 100px;
+    }
+    @media (max-width:$mobile) {
+        padding: 35px 15px;
+    }
+}
+.help__title {
+    max-width: 315px;
+    font-family: Georgia;
+    @include font ($h3-size, 130%);
+    letter-spacing: 0.06em;
+    color: $color-dark-1;
+    text-align: center;
+    margin: 0 auto 60px;
+    @media (max-width:$mobile) {
+        max-width: 245px;
+        margin: 0 auto 42px;
+        @include font ($h3-mobile, 130%);
+    }
+}
+
+.help__first-row {
+    padding: 0 87px;
+    //margin-bottom: 55px;
+    @media (max-width:$tablet) {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+// .help__second-row {
+//     padding: 0 (84px+87px);
+// }
+
+.help__list__first-row {
+    // display: grid;
+    // grid-template-columns: 82px 150px 60px 153px 101px;
+    // gap: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px;
+    row-gap: 55px;
+    @media (max-width:$tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+        justify-content: center;
+    }
+    @media (max-width:$mobile) {
+        display: grid;
+        grid-template-columns: repeat(2, 130px);
+        grid-template-rows: 87px;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+// .help__list__second-row {
+//     display: grid;
+//     grid-template-columns: 89px 101px 165px 143px;
+//     gap: 120px;
+//     @media (max-width:$tablet) {
+//         grid-template-columns: repeat(3, 1fr);
+//         gap: 60px;
+//     }
+// }
+
+.help__list__first-row, .help__list__second-row {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.help__list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item__icon {
+    margin: 0 0 26px;
+    @media (max-width:$mobile) {
+        width: 50px;
+        height: 50px;
+        margin: 0 0 20px;
+    }
+}
+
+.item__name {
+    margin: 0;
+    font-family: Georgia;
+    @include font ($h4-size, 23px);
+    letter-spacing: 0.05em;
+    color: $color-dark-1;
+    @media (max-width:$mobile) {
+        @include font ($p-size, 16.5px);
+    }
+}
+
+.vitamins {
+    margin-left: 84px;
+    @media (max-width:$tablet) {
+        margin: 0 0 0px;
+    }
+}
+
+.Sleeping_areas {
+    
+    @media (max-width:$mobile) {
+        margin: 0 0 10px;
+    }
+}

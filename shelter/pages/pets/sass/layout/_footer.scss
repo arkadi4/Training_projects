@@ -1,0 +1,130 @@
+.footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    //background: url(../../assets/images/footer-background.jpg)
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer-wrapper {
+    padding: 40px 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width:$tablet) {
+        justify-content: space-around;
+        //flex-direction: column-reverse;
+        padding: 35px 30px 0;
+    }
+    @media (max-width:$mobile) {
+        padding: 30px 10px 0;
+    }
+}
+
+.contacts {
+    max-width: 278px;
+    @media (max-width:$mobile) {
+        padding: 0px 11px 0;
+    }
+}
+
+.contacts__title, .location__title {
+    font-family: Georgia;
+    @include font ($h3-size, 130%);
+    letter-spacing: 0.05em;
+    color: $color-light;
+    margin: 16px 0 30px;
+    @media (max-width:$tablet) {
+        margin: 0 0 40px;
+    }
+    @media (max-width:$mobile) {
+        margin: 0 0 42px;
+        @include font ($h3-mobile, 130%);
+        text-align: center;
+
+    }
+}
+
+.location__title {
+    @media (max-width:$tablet) {
+        margin: 0 0 33px;
+        padding: 0 10px 0;
+    }
+}
+
+.contacts__mail {
+    max-width: 251px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+}
+
+.mail-adress, .phone-number, .location-adress {
+    font-family: Georgia;
+    @include font ($h4-size, 115%);
+    letter-spacing: 0.06em;
+    color: $color-primary;
+    cursor: pointer;
+    text-decoration: none;
+    @media (max-width:$mobile) {
+        text-align: center;
+    }
+}
+
+.phone-number {
+    @media (max-width:$mobile) {
+        margin: 0 0 40px 5px;
+    }
+}
+
+.contacts__phone {
+    max-width: 239px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    max-width: 302px;
+    @media (max-width:$mobile) {
+        //padding: 0px 10px 0;
+    }
+}
+
+.location__element1, .location__element2 {
+    max-width: 302px;
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.location__element1 {
+    margin-bottom: 27px;
+    @media (max-width:$mobile) {
+        margin-bottom: 37px;
+    }
+}
+.location__element2 {
+    @media (max-width:$tablet) {
+        margin: 0 0 65px;
+    }
+    @media (max-width:$mobile) {
+        margin-bottom: 38px;
+    }
+}
+
+.location-icon {
+    cursor: pointer;
+}
+
+.footer-img {
+    background: url(../../assets/images/footer-puppy-768.png);
+    width: 300px;
+    height: 310px;
+    background-size: contain;
+    @media (max-width:$mobile) {
+        width: 260px;
+        height: 269px;
+    }
+}

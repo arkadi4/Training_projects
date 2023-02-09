@@ -1,0 +1,32 @@
+.logo {
+    width: 187px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+.logo-title {
+    font-family: Georgia;
+    @include font ($h1-size, 110%);
+    letter-spacing: 0.06em;
+    // @extend %flexCenter;
+    color: $color-dark-1;
+    margin: 0 0 10px 0;
+}
+
+.logo-subtitle {
+    @include font (13px, 15px);
+    letter-spacing: 0.1em;
+    // @extend %flexCenter;
+    margin: 0 0 0 4px;
+    color: $color-dark-1;
+}
+
+.logo_active {
+    // display: none;
+    position: fixed;
+    top: 30px;
+    right: 120px;
+    z-index: 20;
+    transition: all 0.5s;
+}

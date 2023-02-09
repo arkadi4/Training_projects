@@ -1,0 +1,85 @@
+.about-wrapper {
+    
+    padding: 80px 215px 100px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:$tablet) {
+        flex-direction: column-reverse;
+        padding: 60px 165px 100px;
+        gap:80px;
+    }
+    @media (max-width:$mobile) {
+        flex-direction: column-reverse;
+        padding: 37px 10px;
+        gap:42px;
+    }
+}
+
+.about-img {
+    background: url(../../assets/images/about-pets.jpg);
+    width: 300px;
+    height: 408px;
+    background-size: contain;
+    @media (max-width:$tablet) {
+        //margin: 0 68px 0px 69px;
+        margin: 0 auto;
+        width: 300px;
+        height: 408px;
+    }
+    @media (max-width:$mobile) {
+        margin: 0 auto;
+        //margin: 0 20px 0px 20px;
+        width: 260px;
+        height: 353px;
+
+        // width: calc(260*100vw/320);
+        // height: calc(353*100vw/320);
+    }
+}
+
+.about-text {
+    max-width: 430px;
+    padding-top: 14px;
+    @media (max-width:$tablet) {
+        margin: 0 auto;
+    }
+    @media (max-width:$mobile) {
+        padding-top: 0;
+    }
+}
+
+.about-text__title {
+    max-width: 370px;
+    font-family: Georgia;
+    @include font($h3-size, 130%);
+    letter-spacing: 0.06em;
+    margin: 0 0 25px;
+    @media (max-width:$mobile) {
+        margin: 0 auto 25px;
+        text-align:center;
+        @include font($h3-mobile, 130%);
+        max-width: 233px;
+    }
+}
+
+.about-text__par1 {
+    max-width: 430px;
+    @include font ($p-size, 160%);
+    color: $color-dark-x1;
+    margin: 0 0 25px;
+    @media (max-width:$mobile) {
+        text-align:justify;
+        margin: 0 15px 22px;
+    }
+}
+
+.about-text__par2 {
+    max-width: 420px;
+    @include font ($p-size, 160%);
+    color: $color-dark-x1;
+    margin: 0 0 0;
+    @media (max-width:$mobile) {
+        text-align:justify;
+        margin: 0 15px;
+    }
+}

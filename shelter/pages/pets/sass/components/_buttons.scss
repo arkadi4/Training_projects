@@ -1,0 +1,17 @@
+
+
+.slider__button__left-arrow {
+    transform: rotate(-180deg) 
+               translateY(3px);
+    //transform: translateY(5px);
+}
+
+.slider__button__rigth-arrow {
+    transform: translateY(-3px);
+}
+
+
+
+.pets__button {
+    width: 261px;
+}

@@ -1,0 +1,132 @@
+.start-screen {
+    padding: 60px 40px 0 40px;
+    @media (max-width:$tablet) {
+        padding: 60px 30px 0 30px;
+    }
+    @media (max-width:$mobile) {
+        padding: 60px 10px 0 10px;
+    }
+    &_active {
+        margin-top: 30px;
+        
+    }
+
+}
+
+.start-screen-wrapper {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    @media (max-width:$tablet) {
+        flex-direction: column;
+        gap:100px;
+    }
+    @media (max-width:$mobile) {
+        gap:105px;
+    }
+}
+
+.content {
+    max-width: 460px;
+    //width: calc(460*100vw / 1280);
+    // width:  20vw;
+    padding-top: 163px;
+    @media (max-width:$tablet) {
+        padding: 0;
+        //margin: 0 0px 0 125px;
+        margin: 0 auto;
+        max-width: 708px;
+    }
+    @media (max-width:$mobile) {
+        margin: 0;
+    }
+    // &_active {
+    //     display: none;
+    // }
+    
+}
+
+.content__title {
+    max-width: 310px;
+    font-family: Georgia;
+    @include font ($h2-size, 130%);
+    color: $color-light;
+    margin: 0 0 42px 0;
+    @media (max-width:$mobile) {
+        margin: 0 auto 42px;
+        text-align: center;
+        max-width: 233px;
+        @include font ($h3-mobile, 130%);
+        letter-spacing: 0.06em;
+    }
+}
+
+.content__text {
+    max-width: 460px;    
+    font-family: $font-text;
+    @include font ($p-size, 160%);
+    color: $color-dark;
+    margin: 0 0 42px 0;
+    @media (max-width:$mobile) {
+        // max-width: 350px;
+        margin: 0 auto 42px;
+        text-align: center;
+    }
+}
+
+.content__button__container {
+    @media (max-width:$tablet) {
+        //padding: 0 126px 0 127px;
+        //margin: 0 126px 0 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    @media (max-width:$mobile) {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.start-screen__img {
+    //background-image: url(../../assets/images/start-screen-puppy1.jpg);
+    // background-image: url(../../assets/images/start-screen-puppy-768.png);
+    // width: calc(698 / 1280) vw;
+    // height: calc(728 / 1280) vh;
+    // width: calc(698*100vw/1280);
+    // height: calc(728*100vw/1280);
+    width: 698px;
+    height: 728px;
+    // width: 50%;
+    // height: 50%;
+    // background-size: cover;
+    @media (max-width:$tablet) {
+        width: 569px;
+        height: 593px;
+        // width: calc(698*100vw/1280);
+        // height: calc(728*100vw/1280);
+    }
+    @media (max-width:$mobile) {
+        // width: 569px;
+        // height: 593px;
+        width: 260px;
+        height: 271px;
+        // width: calc(260*100vw/320);
+        // height: calc(271*100vw/320);
+    }
+
+}
+
+.content__image__container {
+    @media (max-width:$tablet) {
+        padding: 0 0 0 139px;
+        margin: 0 auto;
+    }
+    @media (max-width:$mobile) {
+        // width: 300px;
+        // height: 271px;
+        
+        padding: 0 0 0 40px;
+    }
+}
